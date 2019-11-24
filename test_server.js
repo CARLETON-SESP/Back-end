@@ -20,8 +20,6 @@ request(url, function (err, response, body) {
       var json = JSON.stringify(weather)
     }
     app.get('/', (req, res) => res.send({json}))
-    xmlhttp.open("Get","ec2-34-230-39-178.compute-1.amazonaws.com:8080/json");
-    xmlhttp.send();
     app.listen(port, () => console.log(`Example app listening on port ${port}!`))
   });
 

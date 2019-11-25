@@ -1,0 +1,4 @@
+
+docker image build -t sespsyscon/back-end .
+
+docker container run --name sesp-ui -it -p 8081:8081 -v $(pwd):/app sespsyscon/back-end

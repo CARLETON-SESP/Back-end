@@ -16,7 +16,7 @@ pipeline {
 
         stage('Build & Push Docker Image') {
             when {
-                branch "jake_branch"
+                branch "master"
             }
             steps {
                withCredentials([file(credentialsId: 'josh-vm', variable: 'PEM_KEY')]) {
